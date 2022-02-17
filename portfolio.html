@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Responsive Personal Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="user">
+                <img src="Mypic.jpg" alt="">
+                <h3 class="name">Srijani Chakroborty</h3>
+                <p class="post">Software Developer</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#education">education</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="home" id="home">
+        <div id="menu" class="fas fa-bars"></div>
+        <h3>HI THERE!</h3>
+        <h1>I'M<span>Srijani Chakroborty</span></h1>
+        <p>Pursuing my gradualtion in Computer Science and Engineering from Amity University Kolkata, I am a coding enthusiast and as well as have interest on Web Development.</p>
+        <a href="#about"><button class="btn">about me<i class="fas fa-user"></i></button></a>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading"><span>about</span>me</h1>
+            <div class="row">
+                <div class="info">
+                    <h3><span>Name:</span>Srijani Chakroborty</h3>
+                    <h3><span>Age:</span>20</h3>
+                    <h3><span>Qualification:</span>B.Tech</h3>
+                    <h3><span>Branch:</span>CSE</h3>
+                    <h3><span>Language:</span>English</h3>
+                    <a href="#"><button class="btn">Download Resume<i class="fas fa-download"></i></button></a>
+                </div>
+                <div class="counter">
+                    <div class="box">
+                        <span>0</span>
+                        <h3>Years of Experience</h3>
+                    </div>
+                
+                    <div class="box">
+                        <span>3+</span>
+                        <h3>Projects Completed</h3>
+                    </div>
+                
+                    <div class="box">
+                        <span>3+</span>
+                        <h3>Achievements accomplished</h3>
+                    </div>
+
+                    <div class="box">
+                        <span>1</span>
+                        <h3>Interships Done</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h1 class="heading">my<span>education</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2016</span>
+                    <h3>class 10th</h3>
+                    <p>Done my Secondary Education from Surendranath Girls' High School. Secured 88.29% marks in my 10th and the board was State Board.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2018</span>
+                    <h3>Class 12th</h3>
+                    <p>Done my Higher Secondary Education from Surendranath Girls' High School. Secured 81% marks in my 12th and the board was State Board.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2022</span>
+                    <h3>Graduation</h3>
+                    <p>Currently pursuing B.Tech in Computer Science and Engineering from Amity University Kolkata and my current CGPA is 9.32.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h1 class="heading">my<span>portfolio</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="img1.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="img2.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="img3.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="img4.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="img5.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="img6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>contact</span>me</h1>
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">contact info</h3>
+                    <div class="info">
+                        <h3><i class="fas fa-envelope"></i>chakrobortysrijani2001@gmail.com</h3>
+                        <h3><i class="fas fa-phone"></i>+91 8240147349</h3>
+                        <h3><i class="fas fa-phone"></i>+91 7044208242</h3>
+                        <h3><i class="fas fa-map-marker-alt"></i>Kolkata,India - 700152</h3>
+                    </div>
+                </div>
+                <form action="insert.php" method="post">
+                    <input type="text" placeholder="name" class="box" name="namee" required>
+                    <input type="email" placeholder="email" class="box" name="email" required>
+                    <input type="text" placeholder="project" class="box" name="project" required>
+                    <textarea name="messagee" id="" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
+                    <button type="submit" class="btn" name="save">send<i class="fas fa-paper-plane" ></i></button>
+                </form>
+            </div>
+        </section>
+
+        <a href="#home" class="top">
+            <img src="scroll-top-img.png" alt="">
+        </a>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
